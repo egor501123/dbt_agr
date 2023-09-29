@@ -1,0 +1,19 @@
+config:
+  send_anonymous_usage_stats: False
+  use_colors: True
+  partial_parse: True
+
+
+dbt_postgress:
+  outputs:
+    dev:
+      type: postgres
+      threads: 6
+      host: db2.mpkazantsev.ru
+      port: 5432
+      user: postgres
+      pass: '55555'
+      dbname: postgres
+      schema: xml_parser
+  target: dev
+

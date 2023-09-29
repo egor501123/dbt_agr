@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: cre_data
+    database: postgres
+    schema: xml_parser
+    tables:
+      - name: singleformattype
+        identifier: sf_singleformattype
+      - name: maintype
+        identifier: sf_maintype
+      - name: loanstype
+        identifier: sf_loanstype
+      - name: loansoverviewtype
+        identifier: sf_loansoverviewtype
+
+
